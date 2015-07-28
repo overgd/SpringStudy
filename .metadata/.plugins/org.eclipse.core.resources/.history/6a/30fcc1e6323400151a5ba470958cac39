@@ -1,0 +1,24 @@
+package dao.impl;
+
+import java.util.List;
+
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.RowMapper;
+
+import dao.TeamDao;
+import model.Team;
+
+public class TeamDaoImpl implements TeamDao {
+
+	@Override
+	public List<Team> getTeamList() throws DataAccessException {
+
+		RowMapper<Team> rowMapper = new TeamRowMapper();
+		
+		return rowMapper;
+	}
+	
+	protected class TeamRowMapper implements RowMapper<Team> {
+		
+	}
+}

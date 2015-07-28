@@ -1,0 +1,26 @@
+package dao.impl;
+
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
+import org.springframework.jdbc.core.support.JdbcDaoSupport;
+
+import dao.PlayerDao;
+import model.Player;
+
+public class PlayerDaoImpl extends JdbcDaoSupport implements PlayerDao {
+
+	private SimpleJdbcInsert insertPlayer;
+	protected void initDao() throws Exception {
+		
+		this.insertPlayer = new SimpleJdbcInsert(getDataSource());
+		
+	}; 
+	
+	@Override
+	public void insertPlayer(Player player) throws DataAccessException {
+
+		
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+
+	<bean class="sample.LoggingSample" id="loggingSample"></bean>
+	
+	<bean id="targetBean" class="sample.MessageBeanImpl">
+		<property name="name" value="Spring"></property>
+	</bean>
+	<aop:config>
+		<aop:aspect ref="loggingSample" id="logAspect">
+			<aop:pointcut expression="execution(* sayHello())"
+				id="logPointcut" />
+			<aop:around pointcut-ref="logPotintcut" method="logAround" />
+		</aop:aspect>
+	</aop:config>
+</beans>

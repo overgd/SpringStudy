@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=1-2/src\/main\/java&lt;sample{MessageBean.java[MessageBean" modifiers="513" timestamp="1437958551362"/>
+<typeInfo handle="=1-2/src\/main\/java&lt;sample{MessageBeanKr.java[MessageBeanKr" modifiers="1" timestamp="1437958739728"/>
+<typeInfo handle="=1-2/C:\/Users\/Administrator\/.m2\/repository\/org\/hibernate\/hibernate-core\/4.2.1.Final\/hibernate-core-4.2.1.Final.jar&lt;org.hibernate.persister.entity(OuterJoinLoadable.class[OuterJoinLoadable" modifiers="1537" timestamp="1437729952187"/>
+<typeInfo handle="=1-2/src\/main\/java&lt;sample1{Outputter.java[Outputter" modifiers="513" timestamp="1437961570188"/>
+<typeInfo handle="=1-2/src\/main\/java&lt;sample1{MessageBean.java[MessageBean" modifiers="513" timestamp="1437964228946"/>
+<typeInfo handle="=1-2/src\/main\/java&lt;sample1{FileOutputter.java[FileOutputter" modifiers="1" timestamp="1437962008881"/>
+<typeInfo handle="=1-2/src\/main\/java&lt;sample{MessageBeanEn.java[MessageBeanEn" modifiers="1" timestamp="1437958663702"/>
+<typeInfo handle="=1-2/src\/main\/java&lt;sample1{MessageBeanImpl.java[MessageBeanImpl" modifiers="1" timestamp="1437964243231"/>
+<typeInfo handle="=1-2/src\/main\/java&lt;sample2{FileOutputter.java[FileOutputter" modifiers="1" timestamp="1437965485314"/>
+<typeInfo handle="=1-2/src\/main\/java&lt;sample2{MessageBeanImpl.java[MessageBeanImpl" modifiers="1" timestamp="1437965835720"/>
+<typeInfo handle="=1-3/src\/main\/java&lt;sample{MessageBean.java[MessageBean" modifiers="513" timestamp="1437967132676"/>
+<typeInfo handle="=1-3/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/spring-core\/3.2.3.RELEASE\/spring-core-3.2.3.RELEASE.jar&lt;org.springframework.cglib.proxy(MethodInterceptor.class[MethodInterceptor" modifiers="1537" timestamp="1437729939292"/>
+<typeInfo handle="=1-3/src\/main\/java&lt;sample{LoggingAdvice.java[LoggingAdvice" modifiers="1" timestamp="1437968411699"/>
+<typeInfo handle="=1-3/src\/main\/java&lt;sample{MessageBeanImpl.java[MessageBeanImpl" modifiers="1" timestamp="1437967281826"/>
+<typeInfo handle="=1-2/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/spring-aop\/3.2.3.RELEASE\/spring-aop-3.2.3.RELEASE.jar&lt;org.springframework.aop.support(DefaultPointcutAdvisor.class[DefaultPointcutAdvisor" modifiers="33" timestamp="1437729937570"/>
+<typeInfo handle="=1-1/C:\/Program Files\/Java\/jre1.8.0_51\/lib\/ext\/nashorn.jar&lt;jdk.nashorn.internal.runtime.regexp(JdkRegExp.class[JdkRegExp" modifiers="33" timestamp="1437438592054"/>
+<typeInfo handle="=1-2/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/spring-aop\/3.2.3.RELEASE\/spring-aop-3.2.3.RELEASE.jar&lt;org.springframework.aop.support(JdkRegexpMethodPointcut.class[JdkRegexpMethodPointcut" modifiers="33" timestamp="1437729937570"/>
+<typeInfo handle="=1-2/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/spring-aop\/3.2.3.RELEASE\/spring-aop-3.2.3.RELEASE.jar&lt;org.springframework.aop.framework(ProxyFactoryBean.class[ProxyFactoryBean" modifiers="33" timestamp="1437729937570"/>
+<typeInfo handle="=1-4/src\/main\/java&lt;sample{LoggingSample.java[LoggingSample" modifiers="1" timestamp="1437976817548"/>
+<typeInfo handle="=1-4/src\/main\/java&lt;sample{MessageBeanImpl.java[MessageBeanImpl" modifiers="1" timestamp="1437967281826"/>
+<typeInfo handle="=2-1/src\/main\/java&lt;dao{TeamDao.java[TeamDao" modifiers="513" timestamp="1437981238940"/>
+<typeInfo handle="=2-1/src\/main\/java&lt;ui{AbstractUI.java[AbstractUI" modifiers="1025" timestamp="1437982230102"/>
+</typeInfoHistroy>

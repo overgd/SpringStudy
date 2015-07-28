@@ -1,0 +1,7 @@
+package dao.impl;
+
+import org.springframework.jdbc.object.SqlUpdate;
+
+public class DeletePlayer extends SqlUpdate {
+
+}

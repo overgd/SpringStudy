@@ -1,0 +1,9 @@
+package dao.impl;
+
+import org.springframework.jdbc.object.MappingSqlQuery;
+
+import model.Player;
+
+public class PlayerListQuery extends MappingSqlQuery<Player> {
+
+}

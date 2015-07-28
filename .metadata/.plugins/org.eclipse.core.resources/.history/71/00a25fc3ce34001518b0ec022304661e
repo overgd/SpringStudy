@@ -1,0 +1,16 @@
+package dao.impl;
+
+import org.springframework.dao.DataAccessException;
+
+import dao.PlayerDao;
+import model.Player;
+
+public class PlayerDaoImpl implements PlayerDao {
+
+	@Override
+	public void insertPlayer(Player player) throws DataAccessException {
+		// TODO Auto-generated method stub
+
+	}
+
+}

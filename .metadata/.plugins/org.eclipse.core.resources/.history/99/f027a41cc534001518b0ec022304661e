@@ -1,0 +1,25 @@
+package ui;
+
+public class MenuUI extends AbstractUI {
+
+	private SelectTeamUI selectTeamUi;
+	
+	
+	public SelectTeamUI getSelectTeamUi() {
+		return selectTeamUi;
+	}
+
+	public void setSelectTeamUi(SelectTeamUI selectTeamUi) {
+		this.selectTeamUi = selectTeamUi;
+	}
+
+	@Override
+	public void show() {
+		
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

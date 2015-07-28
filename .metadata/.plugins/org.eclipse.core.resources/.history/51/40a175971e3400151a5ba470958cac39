@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<bean id="loggingAdvice" class="sample.LoggingAdvice"></bean>
+	<bean id="targerBean" class="sample.MessageBeanImpl">
+		<property name="name" value="Spring"></property>
+	</bean>
+	<bean id="myAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="advice" ref="loggingAdvice"></property>
+		<property name="pointcut">
+			<bean class="jdk.nashorn.internal.runtime.regexp.JdkRegExp">
+				<property name="pattern" value=".*sayHello.*"></property>
+			</bean>
+		</property>
+	</bean>
+</beans>

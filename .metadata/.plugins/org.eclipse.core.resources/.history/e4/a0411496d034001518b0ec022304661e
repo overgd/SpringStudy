@@ -1,0 +1,26 @@
+package dao.impl;
+
+import java.util.List;
+
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcDaoSupport;
+import org.springframework.jdbc.core.support.JdbcDaoSupport;
+
+import dao.TeamDao;
+import model.Team;
+
+public class TeamDaoImpl extends NamedParameterJdbcDaoSupport implements TeamDao {
+	
+	@Override
+	public List<Team> getTeamList() throws DataAccessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Team getTeamList(Integer teamId) throws DataAccessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

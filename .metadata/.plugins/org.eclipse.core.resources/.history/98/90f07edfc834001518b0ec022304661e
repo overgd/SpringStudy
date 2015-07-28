@@ -1,0 +1,72 @@
+package ui;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MenuUI extends AbstractUI {
+
+	private SelectTeamUI selectTeamUi;
+
+	public SelectTeamUI getSelectTeamUi() {
+		return selectTeamUi;
+	}
+
+	public void setSelectTeamUi(SelectTeamUI selectTeamUi) {
+		this.selectTeamUi = selectTeamUi;
+	}
+
+	protected void showMenu() {
+
+		System.out.println("-------------------------------------");
+		System.out.println("");
+		System.out.println("1. 종료");
+		System.out.println("2. 팀 목록");
+		System.out.println("");
+		System.out.println("번호를 입력 후 엔터키를 누르시오.");
+
+	}
+
+	@Override
+	public void show() {
+
+	}
+
+	protected int getMaxMenuNumber() {
+		return 2;
+	}
+
+	protected int getMinMenuNumber() {
+		return 1;
+	}
+
+	protected void execute(int number) {
+
+		switch (number) {
+		case 1:
+			System.out.println("종료되었습니다.");
+			System.exit(0);
+			break;
+
+		case 2:
+			this.selectTeamUi.show();
+			break;
+
+		default:
+			break;
+		}
+	}
+
+	public static void main(String[] args) {
+		System.out.println("main");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+		MenuUI menuUi = (MenuUI) ctx.getBean("menuUi");
+		System.out.println("main2");
+
+		while (true) {
+			menuUi.show();
+		}
+
+	}
+
+}

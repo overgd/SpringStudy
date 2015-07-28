@@ -1,0 +1,22 @@
+package ui;
+
+import dao.PlayerDao;
+
+public class DeletePlayerUI extends AbstractUI {
+
+	private PlayerDao playerDao;
+
+	public PlayerDao getPlayerDao() {
+		return playerDao;
+	}
+
+	public void setPlayerDao(PlayerDao playerDao) {
+		this.playerDao = playerDao;
+	}
+
+	@Override
+	public void show() {
+
+	}
+
+}

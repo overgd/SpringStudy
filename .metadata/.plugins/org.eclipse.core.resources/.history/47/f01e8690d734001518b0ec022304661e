@@ -1,0 +1,40 @@
+package ui;
+
+import dao.PlayerDao;
+import dao.TeamDao;
+
+public class InsertPlayerUI extends AbstractUI {
+
+	private TeamDao teamDao;
+	private PlayerDao playerDao;
+
+	public TeamDao getTeamDao() {
+		return teamDao;
+	}
+
+	public void setTeamDao(TeamDao teamDao) {
+		this.teamDao = teamDao;
+	}
+
+	public PlayerDao getPlayerDao() {
+		return playerDao;
+	}
+
+	public void setPlayerDao(PlayerDao playerDao) {
+		this.playerDao = playerDao;
+	}
+
+	@Override
+	public void show() {
+
+		final String playerName = "선수이름";
+
+	}
+	
+	protected void showMenu(String wanted) {
+		System.out.println("-----------------------------------");
+		System.out.println("");
+		System.out.printf("%s를 입력하고 엔터를 누르세요.\n", wanted);
+	}
+
+}

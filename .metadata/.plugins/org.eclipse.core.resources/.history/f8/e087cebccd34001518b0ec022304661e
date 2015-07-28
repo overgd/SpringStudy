@@ -1,0 +1,9 @@
+package model;
+
+public class Player {
+
+	private Integer player_id;
+	private String name;
+	private Integer team_id;
+
+}

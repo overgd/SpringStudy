@@ -1,0 +1,11 @@
+package sample;
+
+public class MessageBeanImpl implements MessageBean {
+
+	@Override
+	public void sayHello() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

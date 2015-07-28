@@ -1,0 +1,11 @@
+package sample;
+
+@Aspect
+public class LoggingSample {
+	
+	@Arodungo
+	public Object logAround(ProceedingJoinPoint) throws Throwable {
+		
+	}
+
+}

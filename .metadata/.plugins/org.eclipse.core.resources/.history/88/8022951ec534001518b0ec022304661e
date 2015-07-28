@@ -1,0 +1,43 @@
+package ui;
+
+public class MenuUI extends AbstractUI {
+
+	private SelectTeamUI selectTeamUi;
+
+	public SelectTeamUI getSelectTeamUi() {
+		return selectTeamUi;
+	}
+
+	public void setSelectTeamUi(SelectTeamUI selectTeamUi) {
+		this.selectTeamUi = selectTeamUi;
+	}
+
+	protected void showMenu() {
+
+		System.out.println("-------------------------------------");
+		System.out.println("");
+		System.out.println("1. 종료");
+		System.out.println("2. 팀 목록");
+		System.out.println("");
+		System.out.println("번호를 입력 후 엔터키를 누르시오.");
+
+	}
+
+	@Override
+	public void show() {
+
+	}
+	
+	protected int getMaxMenuNumber() {
+		return 2;
+	}
+	
+	protected int getMinMenuNumber() {
+		return 1;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

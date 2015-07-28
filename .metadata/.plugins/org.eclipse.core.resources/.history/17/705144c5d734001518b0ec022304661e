@@ -1,0 +1,60 @@
+package ui;
+
+import org.apache.commons.lang3.StringUtils;
+
+import dao.PlayerDao;
+import dao.TeamDao;
+import model.Player;
+
+public class InsertPlayerUI extends AbstractUI {
+
+	private TeamDao teamDao;
+	private PlayerDao playerDao;
+
+	public TeamDao getTeamDao() {
+		return teamDao;
+	}
+
+	public void setTeamDao(TeamDao teamDao) {
+		this.teamDao = teamDao;
+	}
+
+	public PlayerDao getPlayerDao() {
+		return playerDao;
+	}
+
+	public void setPlayerDao(PlayerDao playerDao) {
+		this.playerDao = playerDao;
+	}
+
+	@Override
+	public void show() {
+
+		final String playerName = "선수이름";
+		showMenu(playerName);
+		String name = getInputedString();
+
+		if (StringUtils.isEmpty(name)) {
+			return;
+		} else if (Utility.isSmallLength(name, playerName, 128)) {
+			Player player = new Player();
+			player.setName(name);
+			showTeamField(player);
+		} else {
+			show();
+		}
+	}
+	
+	protected void showTeamField(String player) {
+		
+	}
+
+	protected void showMenu(String wanted) {
+		System.out.println("-----------------------------------");
+		System.out.println("");
+		System.out.printf("%s을 입력하고 엔터를 누르세요.\n", wanted);
+		System.out.println("아무것도 입력하지 않고 엔터를 누르면,");
+		System.out.println("메뉴로 돌아갑니다.");
+	}
+
+}

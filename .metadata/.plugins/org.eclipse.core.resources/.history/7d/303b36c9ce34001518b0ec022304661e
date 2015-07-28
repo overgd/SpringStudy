@@ -1,0 +1,24 @@
+package dao.impl;
+
+import java.util.List;
+
+import org.springframework.dao.DataAccessException;
+
+import dao.TeamDao;
+import model.Team;
+
+public class TeamDaoImpl implements TeamDao {
+
+	@Override
+	public List<Team> getTeamList() throws DataAccessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Team getTeamList(Integer teamId) throws DataAccessException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,19 @@
+package ui;
+
+import org.springframework.util.StringUtils;
+
+public abstract class AbstractUITemplate extends AbstractUI {
+
+	@Override
+	protected String getInputedString() {
+		// TODO Auto-generated method stub
+		return super.getInputedString();
+	}
+
+	abstract protected void showMenu();
+	abstract protected int getMaxMenuNumber();
+	abstract protected int getMinMenuNumber();
+	abstract protected void execute(int number);
+	protected boolean isValidNumber(String str) {
+	}
+}

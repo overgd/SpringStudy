@@ -1,0 +1,14 @@
+package sample1;
+
+public class MessageBeanImpl implements MessageBean {
+
+	private String name;
+	private String greeting;
+	private Outputter outputter;
+	
+	@Override
+	public void sayHello(String name) {
+
+	}
+
+}

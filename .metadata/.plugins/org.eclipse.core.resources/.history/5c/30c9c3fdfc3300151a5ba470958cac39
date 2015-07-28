@@ -1,0 +1,12 @@
+package sample;
+
+public class SayHelloMain {
+
+	public static void main(String[] args) {
+
+		MessageBean mb;
+		mb.sayHello("홍길동");
+		
+	}
+
+}

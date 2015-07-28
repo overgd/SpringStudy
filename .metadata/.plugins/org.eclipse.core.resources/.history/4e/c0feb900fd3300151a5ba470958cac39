@@ -1,0 +1,17 @@
+package sample;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SayHelloMain {
+
+	public static void main(String[] args) {
+
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("sample/beans.xml");
+		
+//		MessageBean mb;
+//		mb.sayHello("홍길동");
+		
+	}
+
+}

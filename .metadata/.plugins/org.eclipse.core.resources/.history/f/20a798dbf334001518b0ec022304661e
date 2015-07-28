@@ -1,0 +1,58 @@
+package ui;
+
+import dao.PlayerDao;
+import dao.impl.UpdatePlayer;
+
+public class SelectPlayerUi extends AbstractUITemplate {
+
+	private PlayerDao playerDao;
+	private DeletePlayerUI deletePlayerUi;
+
+	public PlayerDao getPlayerDao() {
+		return playerDao;
+	}
+
+	public void setPlayerDao(PlayerDao playerDao) {
+		this.playerDao = playerDao;
+	}
+
+	public DeletePlayerUI getDeletePlayerUi() {
+		return deletePlayerUi;
+	}
+
+	public void setDeletePlayerUi(DeletePlayerUI deletePlayerUi) {
+		this.deletePlayerUi = deletePlayerUi;
+	}
+
+	@Override
+	protected void showMenu() {
+
+		System.out.println("----------------------------------");
+		System.out.println("");
+		System.out.println("1. 선수 갱신");
+		System.out.println("2. 선수 삭제");
+		System.out.println("3. 메뉴로 돌아가기");
+		System.out.println("");
+		System.out.println("번호를 입력하고 엔터를 누르세요.");
+		
+	}
+
+	@Override
+	protected int getMaxMenuNumber() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	protected int getMinMenuNumber() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	protected void execute(int number) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

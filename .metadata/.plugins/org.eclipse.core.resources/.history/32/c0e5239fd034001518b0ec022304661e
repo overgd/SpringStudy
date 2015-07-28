@@ -1,0 +1,34 @@
+package dao.impl;
+
+import java.util.List;
+
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcDaoSupport;
+import org.springframework.jdbc.core.support.JdbcDaoSupport;
+
+import dao.TeamDao;
+import dao.impl.TeamDaoImpl.TeamRowMapper;
+import model.Team;
+
+public class TeamDaoImpl extends NamedParameterJdbcDaoSupport implements TeamDao { //조건 검색이기 때문에 NamedParameter... 이다.
+
+	
+	
+	@Override
+	public List<Team> getTeamList() throws DataAccessException {
+
+		RowMapper<Team> rowMapper = new TeamRowMapper();
+
+		return getJdbcTemplate().query("select team_id, name from team", rowMapper);
+		
+		return null;
+	}
+
+	@Override
+	public Team getTeamList(Integer teamId) throws DataAccessException { //특정 팀만 검색하는 메서드
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

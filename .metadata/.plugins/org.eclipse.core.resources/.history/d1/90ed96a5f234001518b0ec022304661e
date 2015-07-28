@@ -1,0 +1,30 @@
+package ui;
+
+import dao.PlayerDao;
+
+public class DeletePlayerUI extends AbstractUI {
+
+	private PlayerDao playerDao;
+
+	public PlayerDao getPlayerDao() {
+		return playerDao;
+	}
+
+	public void setPlayerDao(PlayerDao playerDao) {
+		this.playerDao = playerDao;
+	}
+
+	protected void showMenu() {
+		System.out.println("--------------------------------");
+		System.out.println("");
+		System.out.println("선수ID를 입력하고, 엔터를 누르세요");
+		System.out.println("아무것도 입력하지 않고 엔터를 누르면, ");
+		System.out.println("메뉴로 돌아갑니다.");
+	}
+
+	@Override
+	public void show() {
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package ui;
+
+import org.springframework.util.NumberUtils;
+import org.springframework.util.StringUtils;
+
+public abstract class AbstractUITemplate extends AbstractUI {
+
+	@Override
+	public void show() {
+
+		showMenu();
+		String inputedString = getInputedString();
+		if(isValidNumber(inputedString)) {
+			execute(NumberUtils.toInt(inputedString));
+		}
+
+	}
+
+	abstract protected void showMenu();
+
+	abstract protected int getMaxMenuNumber();
+
+	abstract protected int getMinMenuNumber();
+
+	abstract protected void execute(int number);
+
+	protected boolean isValidNumber(String str) {
+	}
+}

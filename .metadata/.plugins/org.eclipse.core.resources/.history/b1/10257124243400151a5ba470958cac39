@@ -1,0 +1,15 @@
+package sample;
+
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class LoggingSample {
+	
+	@Around("execution(* sayHello())")
+	
+	public Object logAround(ProceedingJoinPoint) throws Throwable {
+		
+	}
+
+}

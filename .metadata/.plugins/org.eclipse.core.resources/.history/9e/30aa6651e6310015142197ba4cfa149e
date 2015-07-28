@@ -1,0 +1,9 @@
+package simple1;
+
+public class hellomain {
+
+	public static void main(String[] args) {
+
+	}
+
+}

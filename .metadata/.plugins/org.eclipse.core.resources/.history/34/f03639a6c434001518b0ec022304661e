@@ -1,0 +1,11 @@
+package ui;
+
+public class MenuUI extends AbstractUI{
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}

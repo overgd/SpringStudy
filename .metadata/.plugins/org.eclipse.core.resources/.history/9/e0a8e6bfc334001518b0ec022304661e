@@ -1,0 +1,22 @@
+package ui;
+
+import dao.TeamDao;
+
+public class SelectTeamUI extends AbstractUI {
+
+	private TeamDao teamDao;
+
+	public TeamDao getTeamDao() {
+		return teamDao;
+	}
+
+	public void setTeamDao(TeamDao teamDao) {
+		this.teamDao = teamDao;
+	}
+
+	@Override
+	public void show() {
+
+	}
+
+}

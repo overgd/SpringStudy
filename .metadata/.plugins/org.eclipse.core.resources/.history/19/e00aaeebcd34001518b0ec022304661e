@@ -1,0 +1,8 @@
+package model;
+
+public class Team {
+
+	private Integer id;
+	private String name;
+	
+}
