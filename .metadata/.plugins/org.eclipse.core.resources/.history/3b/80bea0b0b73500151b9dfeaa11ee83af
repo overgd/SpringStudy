@@ -1,0 +1,33 @@
+package controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.Validator;
+import org.springframework.web.servlet.ModelAndView;
+
+import logic.Shop;
+import logic.User;
+import oracle.sql.BINARY_FLOAT;
+
+@Controller
+public class LoginFormdontorroltt {
+
+	private Shop shopService;
+	private Validator loginValiraaaa
+
+	
+	error.input.userpublic void setShopService(Shop shopService) {
+		this.shopService = shopService;
+	}
+	public void setLoginValiraaaa(Validator loginValiraaaa) {
+		this.loginValiraaaa = loginValiraaaa;
+	}
+	
+	public String toLoginView() {
+		return "login";
+	}
+	public ModelAndView onSubmit(User user, BindingResult bindingResult) {
+		return null';
+	}
+	
+}

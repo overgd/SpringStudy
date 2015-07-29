@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ include file="/WEB-INF/jsp/header.jsp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>사용자 등록 화면</title>
+</head>
+<body>
+<div align="center" class="body">
+	<h2>사용자 등록 화면</h2>
+	<form:form modelAttribute="user" method="post" action="userEntry.html">
+		<spring:hasBindErrors name="user">
+			<font color="red">
+				<c:forEach var="error" items="${errors.globalErrors }">
+					<spring:message code="${error.code }"/>
+				</c:forEach>
+			</font>
+		</spring:hasBindErrors>
+		<table>
+			<tr height="40px">
+				<td>사용자</td>
+				<td><form:input path="userId" maxlength="20" cssClass="userId"/>
+				<font color="red"><form:errors path="userId"></form:errors> </font>
+				</td>
+			</tr>
+			<tr height="40px">
+				<td>패스워드</td>
+				<td><form:input path="password" maxlength="20" cssClass="userId"/>
+				<font color="red"><form:errors path="password"></form:errors> </font>
+				</td>
+			</tr>
+			<tr height="40px">
+				<td>이름</td>
+				<td><form:input path="userName" maxlength="20" cssClass="userId"/>
+				<font color="red"><form:errors path="userName"></form:errors> </font>
+				</td>
+			</tr>
+			<tr height="40px">
+				<td>우편번호</td>
+				<td><form:input path="postCode" maxlength="20" cssClass="userId"/>
+				<font color="red"><form:errors path="postCode"></form:errors> </font>
+				</td>
+			</tr>
+			<tr height="40px">
+				<td>주소</td>
+				<td><form:input path="address" maxlength="20" cssClass="userId"/>
+				<font color="red"><form:errors path="address"></form:errors> </font>
+				</td>
+			</tr>
+			<tr height="40px">
+				<td>Email</td>
+				<td><form:input path="email" maxlength="20" cssClass="userId"/>
+				<font color="red"><form:errors path="email"></form:errors> </font>
+				</td>
+			</tr>
+		</table>
+	</form:form>
+</div>
+</body>
+</html>

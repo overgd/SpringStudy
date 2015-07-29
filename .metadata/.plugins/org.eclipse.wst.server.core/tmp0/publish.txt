@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Wed Jul 29 16:18:06 KST 2015
+org.eclipse.jst.jee.server\:Web3-3=D\:\\GY\\spring\\sts-bundle\\pivotal-tc-server-developer-3.1.1.RELEASE\\base-instance\\wtpwebapps\\Web3-3
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Administrator\\.m2\\repository\\org\\springframework\\spring-web\\3.2.3.RELEASE\\spring-web-3.2.3.RELEASE.jar=D\:\\GY\\spring\\sts-bundle\\pivotal-tc-server-developer-3.1.1.RELEASE\\base-instance\\wtpwebapps\\Web3-3\\WEB-INF\\lib\\spring-web-3.2.3.RELEASE.jar
+org.eclipse.jst.jee.server\:Web3-2=D\:\\GY\\spring\\sts-bundle\\pivotal-tc-server-developer-3.1.1.RELEASE\\base-instance\\wtpwebapps\\Web3-2
+org.eclipse.jst.jee.server\:Web3-1=D\:\\GY\\spring\\sts-bundle\\pivotal-tc-server-developer-3.1.1.RELEASE\\base-instance\\wtpwebapps\\Web3-1

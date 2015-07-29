@@ -1,0 +1,44 @@
+package logic;
+
+import org.springframework.util.StringUtils;
+import org.springframework.validation.Errors;
+import org.springframework.validation.Validator;
+
+public class UserEntryValidator implements Validator {
+
+	@Override
+	public boolean supports(Class<?> arg0) {
+		return User.class.isAssignableFrom(arg0);
+	}
+
+	@Override
+	public void validate(Object arg0, Errors arg1) {
+		User user = (User)arg0;
+		if(!StringUtils.hasLength(user.getUserId())) {
+			arg1.rejectValue("userId", "error.required.user");
+		}
+		if(!StringUtils.hasLength(user.getUserId())) {
+			arg1.rejectValue("password", "error.required.user");
+		}
+		if(!StringUtils.hasLength(user.getUserId())) {
+			arg1.rejectValue("userName", "error.required.user");
+		}
+		if(!StringUtils.hasLength(user.getUserId())) {
+			arg1.rejectValue("postCode", "error.required.user");
+		}
+		if(!StringUtils.hasLength(user.getUserId())) {
+			arg1.rejectValue("address", "error.required.user");
+		}
+		if(!StringUtils.hasLength(user.getUserId())) {
+			arg1.rejectValue("email", "error.required.user");
+		}
+		if(!StringUtils.hasLength(user.getUserId())) {
+			arg1.rejectValue("birthday", "error.required.user");
+		}
+		if(arg1.hasErrors()) {
+			arg1.reject("error.input.user");
+		}
+		
+	}
+
+}

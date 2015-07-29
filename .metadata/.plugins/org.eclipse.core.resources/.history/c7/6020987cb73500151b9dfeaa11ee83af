@@ -1,0 +1,24 @@
+package controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.Validator;
+
+import logic.Shop;
+
+@Controller
+public class LoginFormdontorroltt {
+
+	private Shop shopService;
+	private Validator loginValiraaaa
+
+	
+	public void setShopService(Shop shopService) {
+		this.shopService = shopService;
+	}
+	public void setLoginValiraaaa(Validator loginValiraaaa) {
+		this.loginValiraaaa = loginValiraaaa;
+	}
+	
+	
+	
+}

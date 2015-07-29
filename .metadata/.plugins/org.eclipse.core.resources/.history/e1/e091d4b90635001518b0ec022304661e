@@ -1,0 +1,13 @@
+package logic;
+
+import java.util.List;
+
+public class ShopImpl implements Shop {
+
+	@Override
+	public List<Item> getItemList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

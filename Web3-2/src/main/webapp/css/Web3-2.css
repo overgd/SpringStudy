@@ -1,0 +1,16 @@
+@CHARSET "EUC-KR";
+body {
+	font-family: µ¸¿òÃ¼;
+}
+div.body {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	scrollbar-face-color: #C9BFED;
+	scrollbar-shadow-color: #C9BFED;
+}
+tr.header {
+	background: #C9BFED;
+}
+tr.record {
+	background: #EDEDED;
+}

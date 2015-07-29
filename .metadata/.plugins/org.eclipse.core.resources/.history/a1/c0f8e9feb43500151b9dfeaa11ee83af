@@ -1,0 +1,11 @@
+package logic;
+
+public class UserCatalogImpl implements UserCatalog {
+
+	@Override
+	public User getUserByUserIdAndPassword(String userId, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,11 @@
+package logic;
+
+public class ShopImpl implements Shop {
+
+	@Override
+	public User getUserByUserIdAndPassword(String userId, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

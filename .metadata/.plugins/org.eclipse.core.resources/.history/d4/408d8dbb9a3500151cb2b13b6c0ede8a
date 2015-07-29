@@ -1,0 +1,17 @@
+package controller;
+
+import org.springframework.stereotype.Controller;
+
+import logic.Shop;
+
+@Controller
+public class DetailController {
+
+	private Shop shopService;
+
+	public void setShopService(Shop shopService) {
+		this.shopService = shopService;
+	}
+	
+	
+}
